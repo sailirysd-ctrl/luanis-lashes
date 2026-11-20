@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Agenda Lash 💗</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<h1>🎀 Agenda Lash 🎀</h1>
+	<p>Reserva tu cita y luce una mirada hermosa 💗</p>
+
+	<h2>Reserva tu cita</h2>
+
+	<form id="formularioCita">
+
+		<label>Nombre de la clienta 💗</label>
+		<input type="text" id="nombre" placeholder="Tu nombre" required>
+
+		<br><br>
+
+		<label>Teléfono 📱</label>
+		<input type="tel" id="telefono" placeholder="787-000-0000" required>
+
+		<br><br>
+
+		<label>Servicio de pestañas 👁️</label>
+		<select id="servicio" required>
+			<option value="">Selecciona un servicio</option>
+			<option>Clásicas</option>
+			<option>Híbridas</option>
+			<option>Volumen</option>
+			<option>Retoque</option>
+		</select>
+
+		<br><br>
+
+		<label>💜 Escoge el día de tu cita</label>
+		<input type="date" id="fecha" required>
+
+		<br><br>
+
+		<label>🖤 Escoge la hora de tu cita</label>
+		<select id="hora" required>
+			<option value="">Selecciona una hora</option>
+			<option value="09:00">9:00 AM</option>
+			<option value="10:00">10:00 AM</option>
+			<option value="11:00">11:00 AM</option>
+			<option value="12:00">12:00 PM</option>
+			<option value="13:00">1:00 PM</option>
+			<option value="14:00">2:00 PM</option>
+			<option value="15:00">3:00 PM</option>
+			<option value="16:00">4:00 PM</option>
+			<option value="17:00">5:00 PM</option>
+			<option value="18:00">6:00 PM</option>
+		</select>
+
+		<br><br>
+
+		<button type="submit">Reservar cita 💕</button>
+
+	</form>
+
+	<!-- Confirmación de la cita -->
+	<div id="confirmacion" class="confirmacion" hidden>
+		<h2>🎀 ¡Cita reservada con éxito! 🎀</h2>
+		<p>¡Gracias por reservar tu cita! 💗</p>
+		<div id="detallesCita"></div>
+		<a id="botonWhatsApp" href="#" target="_blank" rel="noopener">
+			Enviar por WhatsApp 💬
+		</a>
+	</div>
+
+	<h2>📅 Citas agendadas</h2>
+	<div id="listaCitas"></div>
+	<script src="script.js"></script>
+	<script>
+		const numeroWhatsApp = "7873807937"; // Reemplaza con tu número de WhatsApp
+	</script>
+</body>
+</html>
